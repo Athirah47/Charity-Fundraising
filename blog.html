@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity & Fundraising</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="validation.js"></script>
+
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="logo charity.png" alt="Charity Logo" />
+    <h1>Charity & Fundraising</h1>
+  </div>
+</header>
+
+<!-- Dropdown Menu -->
+<nav class="dropdown-nav">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <ul id="menu" class="menu hidden">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="campaigns.html"><i class="fas fa-bullhorn"></i> Campaigns</a></li>
+        <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"><i class="fas fa-plus-circle"></i> More</a>
+            <div class="dropdown-content">
+                <a href="volunteering.html"><i class="fas fa-user-plus"></i> Volunteering</a>
+                <a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<!-- Blog Section -->
+<main>
+        <section id="hero">
+            <div class="container">
+                <h2>Welcome to Our Interesting Blog!</h2>
+                <p>Discover informative and engaging articles on various topics.</p>
+                <a href="#blog" class="button">See Latest Articles</a>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Latest Blog Articles</h2>
+                <div class="blog-posts">
+                    <article class="blog-post">
+                        <h3>First Article Title That Really Catches Attention</h3>
+                        <em>Posted on: April 27, 2025</em>
+                        <p>This is a brief summary of your first article. Imagine how interesting this content is for your loyal readers. They will be captivated by every word you write.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>Secrets to Success in [Second Article Topic] That Are Not Widely Known</h3>
+                        <em>Posted on: April 20, 2025</em>
+                        <p>You can write the summary of the second article here. Reveal exclusive secrets and tips that will make readers feel they are getting more value from your blog.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>Latest Trends in [Third Article Topic] That You Must Know This Year</h3>
+                        <em>Posted on: April 15, 2025</em>
+                        <p>This third article will discuss the latest trends that are currently popular. Make sure your readers don't miss this important information.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>Complete Guide to [Fourth Article Topic] for Beginners to Advanced</h3>
+                        <em>Posted on: April 10, 2025</em>
+                        <p>A comprehensive guide that will help readers of various skill levels to master [fourth article topic].</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer>
+  <p>&copy; 2025 Charity & Fundraising. All Rights Reserved.</p>
+  <div class="social-icons" style="margin-top: 10px;">
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+<script>
+$(document).ready(function() {
+    // Fade-in effect when the page loads
+    $(".blog-post").css("opacity", 0).each(function(i) {
+        $(this).delay(200 * i).fadeTo(500, 1);
+    });
+
+
+    // Typing effect on the Blog Title
+    var blogTitle = $("#blog h2").text();
+    $("#blog h2").text("");
+    var i = 0;
+    var typingInterval = setInterval(function() {
+        $("#blog h2").append(blogTitle[i]);
+        i++;
+        if (i > blogTitle.length) {
+            clearInterval(typingInterval);
+        }
+    }, 100); // Typing speed (ms)
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity & Fundraising</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="validation.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script defer src="donation.js"></script>
+  <script defer src="contact.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="logo charity.png" alt="Charity Logo" />
+    <h1>Charity & Fundraising</h1>
+  </div>
+</header>
+
+<!-- Dropdown Menu -->
+<nav class="dropdown-nav">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <ul id="menu" class="menu hidden">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="campaigns.html"><i class="fas fa-bullhorn"></i> Campaigns</a></li>
+        <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"><i class="fas fa-plus-circle"></i> More</a>
+            <div class="dropdown-content">
+                <a href="volunteering.html"><i class="fas fa-user-plus"></i> Volunteering</a>
+                <a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<section class="intro">
+  <h2>Welcome to Charity & Fundraising</h2>
+  <p>We are dedicated to making the world a better place by helping those in need. Together, we can create a positive impact in society.</p>
+  <a href="campaigns.html" class="btn"><i class="fas fa-gift"></i> See Our Campaigns</a>
+</section>
+
+<section class="mission">
+  <div class="mission-content">
+    <h2><span class="highlight">Our Mission</span> is to Help those <br><strong>who need it</strong></h2>
+    <p>
+      We are committed to bringing hope and assistance to those in need. Through our charity and fundraising efforts, we strive to create a world where no one is left behind.
+      Many charities undertake fundraising activities to raise money so they can fund their ongoing work.
+    </p>
+    <p>This guidance provides answers to the most common questions and concerns we hear about charity fundraising.</p>
+    <a href="about.html" class="btn">Learn More</a>
+	
+  </div>
+  <div class="mission-image">
+    <section id="Home" class="Home">
+	<div class="slideshow-container">
+	  <div class="mySlides fade">
+     <img src="charity work.jpeg" alt="About us" width="250px" style="border-radius: 50%;">
+     </div>
+     <div class="mySlides fade">
+         <img src="charity.jpg" alt="About us" width="250px" style="border-radius: 50%;">
+     </div>
+  <div class="mySlides fade">
+     <img src="education.jpg" alt="About us" width="250px" style="border-radius: 50%;">
+     </div>
+ <div class="mySlides fade">
+     <img src="mission.jpg" alt="About us" width="250px" style="border-radius: 50%;">
+     </div>
+</div>
+        </div>
+    </section>
+	
+	<section id="calendar" class="calendar-section">
+  <h2>UPCOMING EVENT</h2>
+  <div class="calendar-controls">
+    <button id="prev-month">🡄</button>
+    <h3 id="month-year"></h3>
+    <button id="next-month">🡆</button>
+  </div>
+  <div id="calendar-container"></div>
+</section>
+
+<section class="call-to-action" style="background-color: #f0f8ff; padding: 50px 20px; text-align: center; margin: 20px; border-radius: 10px;">
+    <h2>Ready to Make a Difference?</h2>
+    <p style="font-size: 1.2em; color: #555; margin-bottom: 30px;">Your support can help us change lives. Donate today and be a part of something meaningful.</p>
+    <a href="#donation" class="btn" style="background-color: #e44d26; font-size: 1.2em;"><i class="fas fa-heart"></i> Donate Now</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Charity & Fundraising. All Rights Reserved.</p>
+  <div class="social-icons" style="margin-top: 10px;">
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+
+<!-- JavaScript  -->
+	<script>
+	 var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1};
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 3000);
+    }
+
+
+</script>
+
+</body>
+</html>

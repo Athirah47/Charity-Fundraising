@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity & Fundraising</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="donation.js"></script>
+  <script src="validation.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="logo charity.png" alt="Charity Logo" />
+    <h1>Charity & Fundraising</h1>
+  </div>
+</header>
+
+<!-- Dropdown Menu -->
+<nav class="dropdown-nav">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <ul id="menu" class="menu hidden">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="campaigns.html"><i class="fas fa-bullhorn"></i> Campaigns</a></li>
+        <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"><i class="fas fa-plus-circle"></i> More</a>
+            <div class="dropdown-content">
+                <a href="volunteering.html"><i class="fas fa-user-plus"></i> Volunteering</a>
+                <a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+
+<section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Join Us & Make an Impact</h1>
+                <p>Join us in our mission to support communities and create positive change.</p>
+                <div class="hero-buttons">
+                    <a href="#donation" class="button primary">Donate Now</a>
+                    <a href="#get-involved" class="button secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="charity illustration.jpg" alt="Charity Illustration">
+            </div>
+        </div>
+    </section>
+
+<section id="get-involved" class="get-involved-section">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <div class="involved-options">
+                <div class="involved-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Help in our charity events and spread kindness to those in need.</p>
+                    <a href="#" class="button secondary">Volunteer</a>
+                </div>
+                <div class="involved-card">
+                    <i class="fas fa-donate"></i>
+                    <h3>Donate</h3>
+                    <p>Support our cause financially and help us change lives.</p>
+                    <a href="#donation" class="button secondary">Donate</a>
+                </div>
+                <div class="involved-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Partner</h3>
+                    <p>Work with us to create meaningful and long-lasting impact.</p>
+                    <a href="#" class="button secondary">Partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="donation">
+    <h2>Make a Donation</h2>
+    <p>Your support helps us make a difference.</p>
+    <form id="donation-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="amount">Donation Amount (RM):</label>
+        <input type="number" id="amount" name="amount" required min="1">
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+            <option value="">-- Select --</option>
+            <option value="credit">Credit Card</option>
+            <option value="bank">Online Banking</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <button type="submit">Donate Now</button>
+    </form>
+</section>
+
+
+<footer>
+    <p>&copy; 2025 Charity & Fundraising. All Rights Reserved.</p>
+	<div class="social-icons" style="margin-top: 10px;">
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+ 
+</body>
+</html>

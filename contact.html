@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity & Fundraising</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script defer src="contact.js"></script>
+  <script src="validation.js"></script>
+
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="logo charity.png" alt="Charity Logo" />
+    <h1>Charity & Fundraising</h1>
+  </div>
+</header>
+
+<!-- Dropdown Menu -->
+<nav class="dropdown-nav">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <ul id="menu" class="menu hidden">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="campaigns.html"><i class="fas fa-bullhorn"></i> Campaigns</a></li>
+        <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"><i class="fas fa-plus-circle"></i> More</a>
+            <div class="dropdown-content">
+                <a href="volunteering.html"><i class="fas fa-user-plus"></i> Volunteering</a>
+                <a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+
+<section class="contact-form">
+    <form action="#" method="post">
+        <label for="full-name">Full Name *</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+
+        <button type="submit" class="send-btn">SEND NOW</button>
+    </form>
+</section>
+    <p class="note">Please review your completed form and click the “Send Now” button above 1 time and allow a moment to be brought to the confirmation page. Thank you.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Charity & Fundraising. All Rights Reserved.</p>
+	<div class="social-icons" style="margin-top: 10px;">
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
