@@ -420,6 +420,54 @@ nav {
     }
 }
 
+.team-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-member {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.back-button {
+  margin-top: 40px;
+}
+
+.back-button .btn {
+  text-decoration: none;
+  background-color: #4A90E2;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button .btn:hover {
+  background-color: #357ABD;
+}
+
+
 /* Responsive Design */
 @media (max-width: 960px) {
     .info-container {
